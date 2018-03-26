@@ -12,13 +12,13 @@ Azure HDInsight currently provides the following cluster types, each with a set 
 
 | Cluster type | Functionality |
 | --- | --- |
-| [Hadoop](hdinsight-hadoop-introduction.md) |Uses HDFS, YARN resource management, and a simple MapReduce programming model to process and analyze data in parallel. Clusters of this type can also be [domain-joined](hdinsight-domain-joined-introduction.md), providing enterprise-grade access control for Hive workloads. |
-| [HBase](hdinsight-hbase-overview.md) |A NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data - potentially billions of rows times millions of columns. See [What is HBase on HDInsight?](hdinsight-hbase-overview.md) |
-| [Storm](hdinsight-storm-overview.md) |A distributed, real-time computation system for processing large streams of data quickly. See [Analyze real-time sensor data using Storm and Hadoop](hdinsight-storm-sensor-data-analysis.md). |
-| [Spark](hdinsight-apache-spark-overview.md) |A parallel processing framework that supports in-memory processing to boost the performance of big-data analytics applications. Spark supports both imperative and SQL based querying, processing of streaming data, and performing machine learning at scale. See [What is Apache Spark in HDInsight?](hdinsight-apache-spark-overview.md) |
-| [Kafka (Preview)](hdinsight-apache-kafka-introduction.md) | A distributed streaming platform that can be used to build real-time streaming data pipelines and applications. Kafka also provides message-queue functionality that allows you to publish and subscribe to data streams. See [Introduction to Apache Kafka on HDInsight](hdinsight-apache-kafka-introduction.md).|
-| [R Server](hdinsight-hadoop-r-server-overview.md) |A server for hosting and managing parallel, distributed R processes for performing machine learning at scale, leveraging the capabilities of the HDInsight cluster. See [Overview of R Server on HDInsight](hdinsight-hadoop-r-server-overview.md). |
-| [Interactive Hive (Preview)](hdinsight-hadoop-use-interactive-hive.md) |In-memory caching for interactive and faster Hive queries, leveraging Live Long and Process (LLAP) technology. See [Use Interactive Hive in HDInsight](hdinsight-hadoop-use-interactive-hive.md). |
+| Hadoop |Uses HDFS, YARN resource management, and a simple MapReduce programming model to process and analyze data in parallel. Clusters of this type can also be domain-joined, providing enterprise-grade access control for Hive workloads. |
+| HBase |A NoSQL database built on Hadoop that provides random access and strong consistency for large amounts of unstructured and semi-structured data - potentially billions of rows times millions of columns.  |
+| Storm |A distributed, real-time computation system for processing large streams of data quickly. |
+| Spark |A parallel processing framework that supports in-memory processing to boost the performance of big-data analytics applications. Spark supports both imperative and SQL based querying, processing of streaming data, and performing machine learning at scale. |
+| Kafka  | A distributed streaming platform that can be used to build real-time streaming data pipelines and applications. Kafka also provides message-queue functionality that allows you to publish and subscribe to data streams. |
+| R Server |A server for hosting and managing parallel, distributed R processes for performing machine learning at scale, leveraging the capabilities of the HDInsight cluster.  |
+| Interactive Hive (Preview) |In-memory caching for interactive and faster Hive queries, leveraging Live Long and Process (LLAP) technology. |
 
 ### Node types
 Each cluster type may contain different types of nodes that have a specific purpose in the cluster. The following table summarizes these node types.
@@ -158,8 +158,5 @@ You can also secure the network perimeter by using Network Security Groups to re
 In addition to securing in-bound traffic by applying NSGs to subnet of the Virtual Network, you can also configure user-defined routes and control the flow of network traffic through a virtual firewall appliance by deploying your HDInsight cluster into a Virtual Network. 
 
 For more details on using HDInsight within a Virtual Network, see [Use Virtual Network](hdinsight-extend-hadoop-virtual-network.md) 
-
-## Next steps
-
-* [Hadoop Components on HDInsight](hdinsight-component-versioning.md): Learn about the Hadoop ecosystem components and versions in Azure HDInsight, as well as the Standard and Premium service levels.  
+  
 
